@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <!-- <link rel="stylesheet" href="css/foundation.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,300,400italic,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.4-2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Blue Arachnid</title>
@@ -11,14 +12,14 @@
 <body>
 
 
-  <nav class="intro-outro">
+  <nav>
+    <a href="#welcome">
+      <div id="home-btn">
+        <img src="img/blue_arachnid_logo.png" id="home-btn-logo">
+        <h2 id="home-btn-text">Blue Arachnid</h2>
+      </div>
+    </a>
     <ul>
-      <a href="#welcome">
-        <li id="home-btn">
-          <img src="img/blue_arachnid_logo.png" id="home-btn-logo">
-          <h2 id="home-btn-text">Blue Arachnid</h2>
-        </li>
-      </a>
       <a href="#bio">
         <li>Bio</li>
       </a>
@@ -37,6 +38,11 @@
       <div id="divider"></div>
       <h2>Webdesign and development</h2>
     </div>
+    <div id="scroll_down_box">
+      <a href="#bio">
+        <i class="fa fa-chevron-down" id="scroll_down_token"></i>
+      </a>
+    </div>
   </section>
 
   <section id="bio">
@@ -45,6 +51,23 @@
 
   <section id="portfolio">
     <h2>Portfolio</h2>
+
+    <div class="portfolio-item">
+      <div class="project">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum neque eligendi voluptatum sequi nostrum blanditiis optio. Doloremque ex maxime repellendus ipsum natus hic recusandae suscipit, quaerat deserunt saepe corporis sint fuga ducimus aliquam ratione rerum necessitatibus, animi. Veniam numquam dolores est, voluptatum vero possimus vitae blanditiis, illo, animi maxime rem.</p>
+        <a href="" class="read-btn">Lees meer...</a>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="project">
+        <h3 class="project-title">Project 2</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum neque eligendi voluptatum sequi nostrum blanditiis optio. Doloremque ex maxime repellendus ipsum natus hic recusandae suscipit, quaerat deserunt saepe corporis sint fuga ducimus aliquam ratione rerum necessitatibus, animi. Veniam numquam dolores est, voluptatum vero possimus vitae blanditiis, illo, animi maxime rem.</p>
+        <a href="" class="read-btn">Lees meer...</a>
+      </div>
+    </div>
+
   </section>
 
   <section id="contact">
@@ -52,10 +75,32 @@
       <h2>Contact</h2>
     </div>
     <div id="contact_background"></div>
+
+    <div id="contact-logo">
+      <img src="img/blue_arachnid_logo.png" alt="blue arachnid logo">
+      <img src="img/logo_decoration.svg" alt="decoration" id="logo_decoration">
+    </div>
+
+    <div class="token" id="token-left">
+      <i class= "fa fa-mobile token-icon"></i>
+      <div class="token-info">
+        <p class="token-title">Mobiel</p>
+        <p class="token-body">06 4005 1083</p>
+      </div>
+    </div>
+
+    <div class="token" id="token-right">
+      <i class= "fa fa-laptop token-icon" id="token-icon-right"></i>
+      <div class="token-info" id="token-info-right">
+        <p class="token-title">Email</p>
+        <p class="token-body">info@blue-arachnid.com</p>
+      </div>
+    </div>
+
   </section>
 
-  <footer class="intro-outro">
-    <p>Made with love and passion by Blue Arachnid (c) | All rights reserved</p>
+  <footer id="outro">
+    <h4>Made with <i class="fa fa-heart"></i> and passion by Blue Arachnid&copy | All rights reserved</h4>
   </footer>
 
 
