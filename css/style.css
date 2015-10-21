@@ -56,14 +56,13 @@ html, body {
 nav{
   height: 80px;
   width: 100%;
-  position: absolute;
-  top: 0;
 
   box-sizing: border-box;
   padding: 3%;
 
   color: #f2f2f2;
   background-color: #1a1a1a;
+  z-index: 1;
 }
 
 ul {
@@ -87,7 +86,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px;
+  border-bottom: 1px;
   border-style: solid;
 }
 
@@ -120,6 +119,12 @@ h3 {
 h4 {
   font-size: 0.75em;
   font-weight: 100;
+}
+
+h5 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 5px;
 }
 
 footer {
@@ -164,10 +169,10 @@ welkom__________________________________________________________________________
 
 
 #welcome {
-  z-index: -1;
+  z-index: 0;
   position: relative;
   width:100%;
-  height:100%;
+  height:90%;
 
   text-align: center;
   color: #f2f2f2;
@@ -240,6 +245,86 @@ welkom__________________________________________________________________________
 bio______________________________________________________________________________________________
 */
 #bio {
+  background-color: white;
+}
+
+#brand {
+  position: relative;
+  width: 35%;
+  height: 550px;
+  margin-top: 2%;
+  box-sizing: border-box;
+  float: right;
+  background: url(../img/destiny_blur.jpg);
+  background-size: cover;
+}
+
+#branding_logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30%;
+}
+
+#read_more_btn {
+  display: block;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  text-align: center;
+}
+
+
+
+.bio-item {
+  margin: 2% 2% 2% 0;
+  width: 30%;
+  height: 150px;
+  display: inline-table;
+}
+
+.bio-icon {
+
+  float: left;
+  width: 150px;
+  height: inherit;
+  margin-right: 15px;
+
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 2.5em;
+
+  color: #f2f2f2;
+
+  background: url(../img/destiny_blur.jpg) no-repeat scroll;
+}
+
+.bio-body {
+  padding: 20px;
+}
+
+#bio-missie {
+  background-position:left top;
+}
+
+#bio-visie {
+  background-position:center top;
+}
+
+#bio-responsive {
+  background-position:left center;
+}
+
+#bio-seo {
+  background-position: center center;
+}
+
+#bio-team {
+  background-position:left bottom;
+}
+
+#bio-locatie {
+  background-position: center bottom;
 }
 
 /*
@@ -324,7 +409,8 @@ contact_________________________________________________________________________
 }
 
 #contact_background{
-  position: absolute;
+  position: fixed;
+  z-index: -5;
   top:8%;
   left: 0;
   width: 100%;
