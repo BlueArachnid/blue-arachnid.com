@@ -154,19 +154,34 @@
   <section id="contact_form">
     <h2>Contactformulier</h2>
 
-    <form action="MAILTO:info@blue-arachnid.com" method="post">
-      <label for="name"><h3>Naam</h3></label>
-      <input type="text" id="name" name="user_name">
+    <form action="" method="post">
+      <div class="form_item">
+        <label>Naam</label><br>
+        <input type="text">
+      </div>
 
-      <label for="mail"><h3>Email</h3></label>
-      <input type="text" id="mail" name="user_email">
+      <div class="form_item">
+        <label>Email</label><br>
+        <input type="text">
+      </div>
 
-      <label for="msg"><h3>Bericht</h3></label>
-      <textarea id="msg" name="user_message"></textarea>
+      <div class="form_item" id="form_item_message">
+        <label>Bericht</label><br>
+        <textarea id="msg"></textarea>
+      </div>
 
-      <input type="submit" value="Versturen!">
+      <div class="form_item">
+        <input type="submit" value="Versturen" id="submit_btn">
+      </div>
     </form>
 
+  </section>
+
+  <section id="responsive">
+    <img src="img/blue_arachnid_logo.png" alt="Blue Arachnid Logo">
+    <h1>Blue Arachnid</h1>
+    <h2>Coming to your mobile device soon!</h2>
+    <h2>Check out blue-arachnid.com on bigger screens though!!!</h2>
   </section>
 
   <footer id="outro">

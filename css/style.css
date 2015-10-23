@@ -111,7 +111,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 300;
   font-style: italic;
 }
@@ -210,6 +210,7 @@ welkom__________________________________________________________________________
   left: 0;
   width: 100%;
   height: 10%;
+  font-size: 2em;
 }
 
 #scroll_down_token {
@@ -262,7 +263,7 @@ bio_____________________________________________________________________________
 #branding_logo {
   display: block;
   margin: 0 auto;
-  padding-top: 30%;
+  padding-top: 45%;
 }
 
 #read_more_btn {
@@ -292,7 +293,7 @@ bio_____________________________________________________________________________
 
   text-align: center;
   line-height: 2.5em;
-  font-size: 2.5em;
+  font-size: 3em;
 
   color: #f2f2f2;
 
@@ -337,7 +338,7 @@ portfolio_______________________________________________________________________
 
 .portfolio-item {
   height: 500px;
-  width:45%;
+  width:46%;
   margin-top: 2%;
   margin-right: 3%;
   display: inline-block;
@@ -368,7 +369,7 @@ portfolio_______________________________________________________________________
 }
 
   .project-title {
-    background-color: rgb(20,20,20);
+    background-color: rgb(26,26,26);
     width: 100%;
     height:20%;
     box-sizing: border-box;
@@ -383,7 +384,7 @@ portfolio_______________________________________________________________________
   }
 
   .read-btn {
-  background-color: rgb(20,20,20);
+  background-color: rgb(26,26,26);
   color: rgb(230,230,230);
   font-style: italic;
   text-decoration: none;
@@ -395,7 +396,7 @@ portfolio_______________________________________________________________________
 
     .read-btn:hover {
     background-color: rgb(230,230,230);
-    color: rgb(20,20,20);
+    color: rgb(26,26,26);
     }
 
 
@@ -492,7 +493,7 @@ contact_________________________________________________________________________
   background-color: #1a1a1a;
   text-align: center;
   font-size: 3em;
-  line-height: 2.2em;
+  line-height: 2.5em;
 }
 
 .token-info{
@@ -556,10 +557,79 @@ contact_________________________________________________________________________
 contact_form_____________________________________________________________________________________________
 */
 #contact_form {
-  height: 80%;
   border-top: 100px;
   border-style: solid;
-  border-color: rgb(26,26,26);
+  border-color: #1a1a1a;
   color: #f2f2f2;
   background-color: rgba(26,26,26,0.8);
+}
+
+input, textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+  padding:1%;
+
+  border-radius: 5px;
+  border-color: #f2f2f2;
+
+  margin-top: 1%;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+
+  color: #f2f2f2;
+  background-color:#1a1a1a;
+}
+
+.form_item {
+  width: 49%;
+  display: inline-block;
+  margin-top: 2%;
+}
+
+#msg {
+  width: 100%;
+  height: 250px;
+}
+
+#form_item_message {
+  width: 99%;
+}
+
+#submit_btn {
+  width: 50%;
+}
+
+/*
+responsive_____________________________________________________________________________________________
+*/
+#responsive {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1260px) {
+  nav, #welcome, #bio, #portfolio, #contact, #contact_form, footer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  #responsive {
+    display: block;
+    top: 50%;
+    position: relative;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
 }
