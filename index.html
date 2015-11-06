@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width= device-width">
+  <meta name="description" content="Blue Arachnid ontwerpt en ontwikkelt websites">
+  <meta name="keywords" content="Blue Arachnid, webdesign, webdevelopment, SEO, Responsive">
+  <meta name="author" content="Erin Blauw">
+
   <!-- <link rel="stylesheet" href="css/foundation.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,300,400italic,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="font-awesome-4.4-2.0/css/font-awesome.min.css">
@@ -13,114 +18,119 @@
 
 
   <nav>
-    <div id="home-btn">
-      <img src="img/blue_arachnid_logo.png" id="home-btn-logo">
-      <h2 id="home-btn-text">Blue Arachnid</h2>
+    <div id="home_btn">
+      <img src="img/blue_arachnid_logo.png" id="home_btn_logo">
+      <h2 id="home_btn_text">Blue Arachnid</h2>
     </div>
     <ul>
-      <a href="#bio">
-        <li>Bio</li>
-      </a>
-      <a href="#portfolio">
-        <li>Portfolio</li>
-      </a>
-      <a href="#contact">
-        <li>Contact</li>
-      </a>
+      <li>
+        <a href="#about" class="hvr-underline-from-center">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio" class="hvr-underline-from-center">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="hvr-underline-from-center">
+          Contact
+        </a>
+      </li>
     </ul>
   </nav>
 
   <section id="welcome">
-    <div id="title-box">
+    <div id="title_box">
       <h1>Blue Arachnid</h1>
       <div id="divider"></div>
       <h2>Webdesign and development</h2>
     </div>
     <div id="scroll_down_box">
-      <i class="fa fa-chevron-down" id="scroll_down_token"></i>
+      <a href="#about">
+        <i class="fa fa-chevron-down" id="scroll_down_token"></i>
+      </a>
     </div>
   </section>
 
-  <section id="bio">
+  <section id="about">
     <h2>Blue Arachnid ontwerp en ontwikkelt websites</h2>
 
     <div id="brand">
       <img src="img/blue_arachnid_logo.png" alt="" id="branding_logo">
-      <a href="bio.html">
-        <p class="read-btn" id="read_more_btn">Lees meer...</p>
+      <a href="about.html">
+        <p class="read_btn" id="read_more_btn">Lees meer...</p>
       </a>
     </div>
 
-    <div class="bio-item">
-      <i class="fa fa-flag bio-icon" id="bio-missie"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-flag about_icon" id="about_missie"></i>
+      <div class="about_body">
         <h5>Missie</h5>
-        <p>De opdrachtgever via het wereldwijde web representeren</p>
+        <p>De opdrachtgever representeren op het internet met een authentieke website.</p>
       </div>
     </div>
 
-    <div class="bio-item">
-      <i class="fa fa-eye bio-icon" id="bio-visie"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-eye about_icon" id="about_visie"></i>
+      <div class="about_body">
         <h5>Visie</h5>
-        <p>Iedereen is awesome!</p>
+        <p>De eindgebruiker is het uitgangspunt voor het ontwerp.</p>
       </div>
     </div>
 
-    <div class="bio-item">
-      <!-- <img src="img/responsive.svg" alt="search engine optimization" class="bio-icon" id="bio-seo"></img> -->
-      <i class="fa fa-desktop bio-icon" id="bio-responsive"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-desktop about_icon" id="about_responsive"></i>
+      <div class="about_body">
         <h5>responsive</h5>
         <p>Uw website beschikbaar op alle platformen...</p>
       </div>
     </div>
 
-    <div class="bio-item">
-      <i class="fa fa-search bio-icon" id="bio-seo"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-search about_icon" id="about_seo"></i>
+      <div class="about_body">
         <h5>seo</h5>
         <p>en als hoogste in de zoekresultaten!</p>
       </div>
     </div>
 
-    <div class="bio-item">
-      <i class="fa fa-user bio-icon" id="bio-team"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-user about_icon" id="about_team"></i>
+      <div class="about_body">
         <h5>one-man-army</h5>
         <p>Blue Arachnid is een eenmansbedrijf bestaande uit Erin Blauw...</p>
       </div>
     </div>
 
-    <div class="bio-item">
-      <i class="fa fa-home bio-icon" id="bio-locatie"></i>
-      <div class="bio-body">
+    <div class="about_item">
+      <i class="fa fa-home about_icon" id="about_locatie"></i>
+      <div class="about_body">
         <h5>Locatie</h5>
         <p>en is gevestigd in Sneek, nabij de Waterpoort.</p>
       </div>
     </div>
-
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
 
-    <div class="portfolio-item">
+    <div class="portfolio_item" id="portfolio_item_1">
       <div class="project">
-        <h3 class="project-title">Project 1</h3>
-        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum neque eligendi voluptatum sequi nostrum blanditiis optio. Doloremque ex maxime repellendus ipsum natus hic recusandae suscipit, quaerat deserunt saepe corporis sint fuga ducimus aliquam ratione rerum necessitatibus, animi. Veniam numquam dolores est, voluptatum vero possimus vitae blanditiis, illo, animi maxime rem.</p>
-        <a href="" class="read-btn">Lees meer...</a>
+        <h3 class="project_title">Stap Vooruit</h3>
+        <p class="project_description">Op dit moment wordt er gewerkt aan dit project. Binnenkort meer over "Stap Vooruit"!</p>
+      <!--         <a href="" class="read_btn">Lees meer...</a> -->
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio_item" id="portfolio_item_2">
       <div class="project">
-        <h3 class="project-title">Project 2</h3>
-        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum neque eligendi voluptatum sequi nostrum blanditiis optio. Doloremque ex maxime repellendus ipsum natus hic recusandae suscipit, quaerat deserunt saepe corporis sint fuga ducimus aliquam ratione rerum necessitatibus, animi. Veniam numquam dolores est, voluptatum vero possimus vitae blanditiis, illo, animi maxime rem.</p>
-        <a href="" class="read-btn">Lees meer...</a>
+        <h3 class="project_title">Uw project hier?</h3>
+        <p class="project_description">Bent u ook opzoek naar een webdesigner om uw onderneming online te presenteren? Neem contact op voor de mogelijkheden!</p>
+        <a href="#contact" class="read_btn">Neem contact op!</a>
       </div>
     </div>
-
   </section>
 
   <section id="contact">
@@ -129,59 +139,70 @@
     </div>
     <div id="contact_background"></div>
 
-    <div id="contact-logo">
-      <img src="img/blue_arachnid_logo.png" alt="blue arachnid logo">
-      <img src="img/logo_decoration.svg" alt="decoration" id="logo_decoration">
-    </div>
+    <!-- <div id="contact_logo_box">
+      <img src="img/logo_decoration.svg" alt="decoration" id="contact_logo_decoration">
+    </div> -->
 
-    <div class="token" id="token-left">
-      <i class= "fa fa-mobile token-icon"></i>
-      <div class="token-info">
-        <p class="token-title">Mobiel</p>
-        <p class="token-body">06 4005 1083</p>
+    <div class="token" id="token_left">
+      <i class= "fa fa-mobile token_icon"></i>
+      <div class="token_info">
+        <p class="token_title">Mobiel</p>
+        <p class="token_body">06 4005 1083</p>
       </div>
     </div>
 
-    <div class="token" id="token-right">
-      <i class= "fa fa-laptop token-icon" id="token-icon-right"></i>
-      <div class="token-info" id="token-info-right">
-        <p class="token-title">Email</p>
-        <p class="token-body">info@blue-arachnid.com</p>
+    <div class="token" id="token_right">
+      <i class= "fa fa-laptop token_icon" id="token_icon_right"></i>
+      <div class="token_info" id="token_info_right">
+        <p class="token_title">Email</p>
+        <p class="token_body">info@blue-arachnid.com</p>
       </div>
     </div>
   </section>
 
-  <section id="contact_form">
+  <section id="contact_formulier">
     <h2>Contactformulier</h2>
 
-    <form action="" method="post">
+ <!--    <form action="contact.php" method="post" name="contact_form">
       <div class="form_item">
-        <label>Naam</label><br>
-        <input type="text">
+        <label for="name">Naam</label><br>
+        <input name="name" id="name" type="text">
       </div>
 
       <div class="form_item">
-        <label>Email</label><br>
-        <input type="text">
+        <label for="email">Email</label><br>
+        <input name="email" id="email" type="text">
       </div>
 
       <div class="form_item" id="form_item_message">
-        <label>Bericht</label><br>
-        <textarea id="msg"></textarea>
+        <label for="message">Bericht</label><br>
+        <textarea name="message" id="msg"></textarea>
       </div>
 
       <div class="form_item">
-        <input type="submit" value="Versturen" id="submit_btn">
+        <input type="submit" name="submit" id="submit" value="Versturen" >
       </div>
     </form>
-
   </section>
+ -->
 
-  <section id="responsive">
-    <img src="img/blue_arachnid_logo.png" alt="Blue Arachnid Logo">
-    <h1>Blue Arachnid</h1>
-    <h2>Coming to your mobile device soon!</h2>
-    <h2>Check out blue-arachnid.com on bigger screens though!!!</h2>
+    <form id="contact_form" class="contact_form" action="contact.php" method="post" name="contact_form">
+      <div class="form_item">
+          <label for="name">Naam:</label>
+          <input type="text" name="name" id="name" required class="required" >
+      </div>
+      <div class="form_item">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" class="required email">
+      </div>
+      <div class="form_item" id="message">
+          <label for="message">Bericht:</label>
+          <textarea name="message" cols="100" rows="12" required  class="required" ></textarea>
+      </div>
+      <div class="form_item">
+          <button type="submit" id="submit" name="submit" class="button fright">Verstuur</button>
+      </div>
+    </form>
   </section>
 
   <footer id="outro">

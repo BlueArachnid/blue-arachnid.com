@@ -67,7 +67,7 @@ nav{
 
 ul {
     float: right;
-    width: 40%;
+    width: 30%;
 }
 
 li {
@@ -75,7 +75,7 @@ li {
   top: 1%;
   display:inline-block;
   font-weight: 100;
-  padding: 0 10% 5%;
+  padding: 0 8% 5%;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -84,11 +84,11 @@ a {
   color: #f2f2f2;
   text-decoration: none;
 }
-
-a:hover {
+/*
+nav a:hover {
   border-bottom: 1px;
   border-style: solid;
-}
+}*/
 
 section {
   box-sizing: border-box;
@@ -118,13 +118,20 @@ h3 {
 
 h4 {
   font-size: 0.75em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h5 {
   text-transform: uppercase;
-  text-decoration: underline;
   padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 3%;
+}
+
+nav h2{
+  float: right;
+  margin-left: 25px;
+
 }
 
 footer {
@@ -148,19 +155,50 @@ footer {
 nav______________________________________________________________________________________________
 */
 
-#home-btn {
+#home_btn {
   position: relative;
   float: left;
   top: -15px;
 }
 
-#home-btn-logo {
+#home_btn_logo {
   float: left;
   height:40px;
 }
-#home-btn-text {
-  float: right;
-  margin-left: 25px;
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #f2f2f2;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
 
 /*
@@ -177,13 +215,13 @@ welkom__________________________________________________________________________
   text-align: center;
   color: #f2f2f2;
 
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) ), url(../img/macbook_air.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) ), url(../img/macbook_air_small.jpg);
   background-position:center center;
   background-size: cover;
   -webkit-background-size: cover;
 }
 
-#title-box {
+#title_box {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -243,9 +281,9 @@ welkom__________________________________________________________________________
 }
 
 /*
-bio______________________________________________________________________________________________
+about______________________________________________________________________________________________
 */
-#bio {
+#about {
   background-color: white;
 }
 
@@ -263,7 +301,10 @@ bio_____________________________________________________________________________
 #branding_logo {
   display: block;
   margin: 0 auto;
-  padding-top: 45%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
 }
 
 #read_more_btn {
@@ -277,14 +318,14 @@ bio_____________________________________________________________________________
 
 
 
-.bio-item {
+.about_item {
   margin: 2% 2% 2% 0;
   width: 30%;
   height: 150px;
   display: inline-table;
 }
 
-.bio-icon {
+.about_icon {
 
   float: left;
   width: 150px;
@@ -300,31 +341,31 @@ bio_____________________________________________________________________________
   background: url(../img/destiny_blur.jpg) no-repeat scroll;
 }
 
-.bio-body {
+.about_body {
   padding: 20px;
 }
 
-#bio-missie {
+#about_missie {
   background-position:left top;
 }
 
-#bio-visie {
+#about_visie {
   background-position:center top;
 }
 
-#bio-responsive {
+#about_responsive {
   background-position:left center;
 }
 
-#bio-seo {
+#about_seo {
   background-position: center center;
 }
 
-#bio-team {
+#about_team {
   background-position:left bottom;
 }
 
-#bio-locatie {
+#about_locatie {
   background-position: center bottom;
 }
 
@@ -336,23 +377,30 @@ portfolio_______________________________________________________________________
 }
 
 
-.portfolio-item {
+.portfolio_item {
   height: 500px;
   width:46%;
   margin-top: 2%;
   margin-right: 3%;
   display: inline-block;
 
-  background: url(../img/destiny.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  background-size: cover;
-
   position: relative;
   overflow:hidden;
 }
-
-  .portfolio-item:hover .project{
+  .portfolio_item:hover .project{
     transform: translate3d(0,-80%,0);
+  }
+
+  #portfolio_item_1 {
+    background: url(../img/city-capital-historical.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  #portfolio_item_2 {
+    background: url(../img/apple-iphone-smartphone-desk.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 
 .project {
@@ -365,25 +413,25 @@ portfolio_______________________________________________________________________
   top: 80%;
   color: rgb(230,230,230);
 
-  transition: transform 1.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
-  .project-title {
+  .project_title {
     background-color: rgb(26,26,26);
     width: 100%;
     height:20%;
     box-sizing: border-box;
-    padding: 8% 10%;
+    padding: 6% 10%;
     text-align: center;
     font-style: italic;
   }
 
-  .project-description {
+  .project_description {
     box-sizing: border-box;
     padding: 5% 10% 15%;
   }
 
-  .read-btn {
+  .read_btn {
   background-color: rgb(26,26,26);
   color: rgb(230,230,230);
   font-style: italic;
@@ -394,7 +442,7 @@ portfolio_______________________________________________________________________
   transition: .5s ease-in-out;
   }
 
-    .read-btn:hover {
+    .read_btn:hover {
     background-color: rgb(230,230,230);
     color: rgb(26,26,26);
     }
@@ -406,7 +454,7 @@ contact_________________________________________________________________________
 #contact {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 #contact_background{
@@ -417,7 +465,7 @@ contact_________________________________________________________________________
   width: 100%;
   height: 100%;
 
-  background: url(../img/macbook_air.jpg);
+  background: url(../img/macbook_air_small.jpg);
   background-position:center center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -443,18 +491,12 @@ contact_________________________________________________________________________
   z-index: 1;
 }
 
-#contact-logo {
-  width: 15%;
-  position: relative;
-  top: 35%;
-  margin: 0 auto;
-}
-
-#logo_decoration {
+/*
+#contact_logo_decoration {
   max-width: 300px;
-  position: absolute;
-  top: -85px;
-  left: -60px;
+  position: relative;
+
+  left: 50%;
 
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 10s;
@@ -465,12 +507,13 @@ contact_________________________________________________________________________
 @-webkit-keyframes rotate {
   from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}
-}
+}*/
 
 .token {
   z-index: 1;
   position: absolute;
-  bottom: 0;
+
+  top: 25%;
 
   width: 450px;
   height: 150px;
@@ -483,7 +526,7 @@ contact_________________________________________________________________________
   font-style: italic;
 }
 
-.token-icon{
+.token_icon{
   position: absolute;
   left: 0;
   width: 150px;
@@ -496,7 +539,7 @@ contact_________________________________________________________________________
   line-height: 2.5em;
 }
 
-.token-info{
+.token_info{
   position: absolute;
   top:5%;
   left:-100%;
@@ -516,47 +559,45 @@ contact_________________________________________________________________________
   z-index: -1;
 }
 
-.token-title{
+.token_title{
   font-weight: 400;
 }
 
-.token-body{
+.token_body{
   font-weight: 100;
 }
 
-#token-info-right {
+#token_info_right {
   left: 100%;
   text-align: left;
 }
 
-#token-icon-right {
+#token_icon_right {
   left: 66.66666%;
 }
 
-#token-left:hover .token-info{
+#token_left:hover .token_info{
   transform: translate(100%,0);
   -webkit-transform: translate(100%,0);
 }
 
-#token-right:hover .token-info{
+#token_right:hover .token_info{
   transform: translate(-100%,0);
   -webkit-transform: translate(-100%,0);
 }
 
-#token-left {
+#token_left {
   left: 0;
 }
 
-#token-right {
+#token_right {
   right: 0;
 }
-
-
 
 /*
 contact_form_____________________________________________________________________________________________
 */
-#contact_form {
+#contact_formulier {
   border-top: 100px;
   border-style: solid;
   border-color: #1a1a1a;
@@ -564,7 +605,7 @@ contact_form____________________________________________________________________
   background-color: rgba(26,26,26,0.8);
 }
 
-input, textarea {
+input, textarea, button {
   width: 100%;
 
   box-sizing: border-box;
@@ -588,33 +629,52 @@ input, textarea {
   margin-top: 2%;
 }
 
-#msg {
-  width: 100%;
-  height: 250px;
+#message {
+  width: 99%;
 }
 
 #form_item_message {
   width: 99%;
 }
 
-#submit_btn {
+#submit {
   width: 50%;
 }
 
-/*
-responsive_____________________________________________________________________________________________
-*/
-#responsive {
-  display: none;
-}
-
-
-
-@media screen and (min-width: 0px) and (max-width: 1260px) {
-  nav, #welcome, #bio, #portfolio, #contact, #contact_form, footer {
-    display: none;
+@media screen and (min-width: 960px) and (max-width: 1260px) {
+  nav, #welcome, #about, #portfolio, #contact, #contact_form, footer {
+    /*display: none;*/
   }
 
+/*
+about____________________________________________________________________________________________
+*/
+  #brand {
+    width: 100%;
+    height: 200px;
+    float: none;
+  }
+
+  #branding_logo {
+  padding-top: 2%;
+}
+
+  #read_more_btn {
+    width: 100%;
+    padding: 2% 0;
+  }
+
+   .about_item {
+    width: 49.5%;
+    margin: 1% 0;
+  }
+
+  .project_title {
+    padding: 10%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
   h1 {
     font-size: 2.25em;
   }
@@ -623,13 +683,136 @@ responsive______________________________________________________________________
     font-size: 1.5em;
   }
 
-  #responsive {
-    display: block;
-    top: 50%;
+  #scroll_down_box {
+    display: none;
+  }
+
+  #brand {
+    width: 100%;
+    height: 200px;
+    float: none;
+  }
+
+  .about_item {
+    margin: 3% 1% 3% 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  .about_body {
+    padding:2%;
+  }
+
+  .about_icon{
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+  }
+
+  .portfolio_item{
+    width: 100%;
+    height: 300px;
+  }
+
+  .form_item {
+    width: 100%;
+  }
+
+  .project {
+    top: 0;
+  }
+
+
+  .token {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 200px;
+    margin: 10% 0 0 0;
+    overflow: visible;
+  }
+
+  .token_icon {
     position: relative;
     width: 100%;
-    transform: translateY(-50%);
+    height: 100px;
+    line-height: 1.75em;
+  }
+
+  #token_icon_right {
+    left: 0;
+  }
+
+  .token_info {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  #token_left{
+    transform:none;
+  }
+
+  #token_info_right {
+    left: 0;
     text-align: center;
   }
 
 }
+
+
+@media screen and (min-width: 701px) and (max-width: 960px) {
+  .token {
+    position: relative;
+  }
+
+  #contact {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 700px){
+
+  #brand {
+    width: 100%;
+    height: 200px;
+    float: none;
+  }
+
+  .portfolio_item {
+    width: 100%;
+  }
+
+  .form_item {
+    width: 100%;
+  }
+
+  #contact {
+    height: 200%;
+  }
+
+  #contact_logo_box {
+    display: none;
+  }
+
+    .token {
+      margin: 5% auto;
+      position: relative;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 720px){
+  .read_btn {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+  }
+
+
+  #contact {
+    height: 80%;
+  }
